@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Store - Shopping</title>
+    <link rel="stylesheet" href="car-shopping.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" class="img">
+        <h2 class="logo">Adventure Shop</h2>
+        <nav class="navigation">
+            <a href="servicos.html">Shop</a>
+            <a href="inicial.html">Pagina Inicial</a>
+        </nav>
+    </header>
+    <img class="img-1" src="./images/2222.png">
+    <img class="img-2" src="./images/55.png">
+    <img class="img-3" src="./images/66.png">
+
+    <div class="content-container">
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" id="item-1">
+                    <h5 class="title-production">Slayer Of Desctruction</h5>
+                    <img src="./images/slayer.png">
+                    <div class="desc">
+                        <h4>Slayer of Destruction
+                            (Atk: 52, Def: 30).<br>
+                            It can only be wielded properly by Knights of level 200 or higher.
+                            Imbuement Slots: 3.
+                            Classification: 2. Max. Tier: 2
+                            It weighs 70.00 oz.</h4>
+                        <h4>R$ 50,00</h4>
+                    </div>
+                    <span class="text-qtd">Qtde.</span>
+                    <input class="qtd-input" id="qtd" type="number">
+                    <button onclick="add()" type="button" class="btn-form btn-add">Adicionar</button>
+        </section>
+        <section id="car-shopping" class="car-shopping">
+            <div class="car-desc">
+                <h2>Baú</h2>
+                <div class="car-products" id="list-products"></div>
+                <p class="car-total">
+                    Total: <span class="text-qtd" id="valor-total">R$00,00</span>
+                </p>
+            </div>
+            <button onclick="buy()" type="button" class="btn-form btn-buy">Comprar</button>
+        </section>
+
+    </div>
+
+    <script src="servicos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
