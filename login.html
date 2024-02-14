@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adventure Store - Login</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" class="img">
+        <h2 class="logo">Adventure Shop</h2>
+        <nav class="navigation">
+            <a href="login.html">Home Page Login</a>
+            <a href="inicial.html">Pagina Inicial</a>
+            <button class="btnLogin-popup" id="loginBtn">Login</button>
+        </nav>
+    </header>
+    <div class="container-message" id="container-message">
+        <div><img src="./images/cats.png" class="img-fundo"></div>
+        <div><img src="./images/32.png" class="img-fundo-3"></div>
+        <div><img src="./images/cats1.png" class="img-fundo-2"></div>
+        <h2>Olá, Guerreiro!</h2>
+        <p>Esperamos que esteja bem! Para acessar e desfrutar de todas as funcionalidades do seu perfil de usuário,
+            solicitamos que faça o login em sua conta no canto superior direito da tela.</br>Isso permitirá que você
+            personalize
+            suas configurações, acompanhe
+            suas atividades e aproveite ao máximo a experiência.</p>
+
+    </div>
+    <div class="wrapper">
+        <div class="form-box login" id="login-section">
+            <h2>Login</h2>
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+            <form action="#" onsubmit="return false">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input id="email-login" type="email" required>
+                    <label id="emailLabel">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input id="senha-login" type="password" required>
+                    <label id="senhaLabel">Senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Lembrar da senha</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button id="btnPerfil" type="submit" class="btn" onclick='login()'>Login</button>
+                <div class="login-register">
+                    <p>Não possui uma conta?<a href="#" class="register-link"> Registre-se</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registro</h2>
+            <div id="msgErrorRegister"></div>
+            <div id="msgSucessRegister"></div>
+
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required id="email">
+                    <label id="label-email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required id="usuario">
+                    <label id="label-usuario">Usuário</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required id="senha">
+                    <label id="label-senha">Senha</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required id="confirmSenha">
+                    <label id="label-confirmSenha">Confirmar senha</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" id="terms-checkbox">Eu aceito todos os termos e condicções de
+                        serviço</label>
+                </div>
+                <button type="submit" class="btn" onclick="register()">Registre-se</button>
+                <div class="login-register">
+                    <p>Já possui uma conta?<a href="#login-section" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
